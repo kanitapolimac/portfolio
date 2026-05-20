@@ -1,0 +1,59 @@
+/* ─────────── Global tokens (home/dark by default) ─────────── */
+:root {
+  --accent: #F8DC5B;
+  --accent-ink: #191926;
+  --bg:        #0B0B10;
+  --bg-elev:   #131319;
+  --bg-line:   #1E1E27;
+  --ink-1:     #F4F2EC;
+  --ink-2:     #B6B4AE;
+  --ink-3:     #6E6C68;
+  --ink-4:     #3E3D3A;
+  --rule:      #23232C;
+
+  --serif: "Fraunces", "Times New Roman", serif;
+  --sans:  "Inter Tight", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  --mono:  "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --maxw: 1440px;
+  --pad:  clamp(20px, 4vw, 56px);
+  --gutter: clamp(16px, 2.4vw, 32px);
+  --section-pad: clamp(96px, 12vw, 180px);
+}
+
+[data-mode="light"] {
+  --bg:      #F4F2EC;
+  --bg-elev: #ECE9E1;
+  --bg-line: #E2DED3;
+  --ink-1:   #191926;
+  --ink-2:   #4A4A55;
+  --ink-3:   #797874;
+  --ink-4:   #B5B3AB;
+  --rule:    #D8D4C8;
+  --accent-ink: #191926;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+html { background: var(--bg); }
+body {
+  font-family: var(--sans);
+  background: var(--bg);
+  color: var(--ink-1);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "ss01", "cv11";
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+::selection { background: var(--accent); color: var(--accent-ink); }
+a { color: inherit; text-decoration: none; }
+img { display: block; max-width: 100%; }
+hr { border: 0; border-top: 1px solid var(--rule); margin: 0; }
+
+/* Reveal-on-scroll utility */
+.reveal { opacity: 0; transform: translateY(28px); transition: opacity .9s cubic-bezier(.2,.7,.2,1), transform .9s cubic-bezier(.2,.7,.2,1); }
+.reveal.in { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1 !important; transform: none !important; transition: none; }
+}
