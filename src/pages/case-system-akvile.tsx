@@ -179,8 +179,7 @@ export default function CaseSystemAkvile() {
           <div className="body">
             <span className="tag">RESEARCH SOURCE · HINGE</span>
             <h3>
-              I studied how dating apps get teens to{" "}
-              <em>finish a long form</em>.
+              I studied Hinge's onboarding, <em>long, but people finish it</em>.
             </h3>
             <p>
               Akvile's clinical value depends on data, body type, sleep,
@@ -189,9 +188,9 @@ export default function CaseSystemAkvile() {
               six.
             </p>
             <p>
-              I researched the apps in the same attention pool, dating apps,
-              especially Hinge, where teens happily fill out longer forms than
-              Akvile ever asked. The pattern was clear:{" "}
+              I researched dating app onboarding, especially Hinge, which asks
+              more of its users than almost any consumer product, and still
+              keeps them through the whole flow. The pattern was clear:{" "}
               <strong>
                 one question per screen, motion between every step, prompts
                 that feel personal, and a sense of self&#8209;reveal
@@ -199,8 +198,8 @@ export default function CaseSystemAkvile() {
               as you go.
             </p>
             <p>
-              I rebuilt Akvile's onboarding to the same shape. Same data
-              collected. Different relationship with the user.
+              I applied the same principles to Akvile's long onboarding. Same
+              questions asked. Different relationship with the user.
             </p>
             <ul>
               <li>One question per screen, paced like a card stack</li>
