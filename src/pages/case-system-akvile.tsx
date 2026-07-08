@@ -179,7 +179,7 @@ export default function CaseSystemAkvile() {
           <div className="body">
             <span className="tag">RESEARCH SOURCE · HINGE</span>
             <h3>
-              I studied Hinge's onboarding, <em>long, but people finish it</em>.
+              I cut onboarding dropoffs by <em>20%</em>, studying dating apps.
             </h3>
             <p>
               Akvile's clinical value depends on data, body type, sleep,
