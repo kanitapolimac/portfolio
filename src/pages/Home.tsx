@@ -2,8 +2,7 @@ import { useRef } from "react";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import CaseCard from "../components/CaseCard";
-import HeroPhoenix from "../components/HeroPhoenix";
-import HeroCursor from "../components/HeroCursor";
+import HeroParticles from "../components/HeroParticles";
 import { useReveal } from "../hooks/useReveal";
 
 export default function Home() {
@@ -17,7 +16,7 @@ export default function Home() {
       {/* HERO */}
       <header className="home-hero" id="top" ref={heroRef}>
         <div className="ambient" />
-        <HeroPhoenix />
+        <HeroParticles hostRef={heroRef} />
         <div className="wrap hero-grid">
           <div className="hero-eyebrow">
             <span className="available-pill">
@@ -69,7 +68,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <HeroCursor hostRef={heroRef} />
       </header>
 
       {/* SELECTED WORK */}
