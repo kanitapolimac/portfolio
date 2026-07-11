@@ -123,31 +123,6 @@ section { padding-block: var(--section-pad); position: relative; }
   grid-template-columns: 1fr;
   gap: clamp(40px, 6vw, 80px);
 }
-.hero-eyebrow {
-  display: flex; gap: 16px; align-items: center;
-  margin-bottom: clamp(32px, 6vw, 64px);
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.available-pill {
-  display: inline-flex; align-items: center; gap: 8px;
-  font-family: var(--mono); font-size: 11px;
-  text-transform: uppercase; letter-spacing: 0.12em;
-  color: var(--ink-2);
-  padding: 6px 11px;
-  border: 1px solid var(--rule);
-  border-radius: 999px;
-}
-.available-pill .pulse {
-  width: 7px; height: 7px; border-radius: 50%;
-  background: #6BCB77; box-shadow: 0 0 0 0 #6BCB7766;
-  animation: pulse 2.4s ease-out infinite;
-}
-@keyframes pulse {
-  0% { box-shadow: 0 0 0 0 #6BCB7766; }
-  70% { box-shadow: 0 0 0 10px #6BCB7700; }
-  100% { box-shadow: 0 0 0 0 #6BCB7700; }
-}
 
 .hero-headline {
   position: relative;

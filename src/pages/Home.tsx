@@ -18,16 +18,6 @@ export default function Home() {
         <div className="ambient" />
         <HeroParticles hostRef={heroRef} />
         <div className="wrap hero-grid">
-          <div className="hero-eyebrow">
-            <span className="available-pill">
-              <span className="pulse" />
-              Available · Senior &amp; lead roles
-            </span>
-            <span className="eyebrow">
-              Senior Product Designer · AI &amp; Data driven SaaS
-            </span>
-          </div>
-
           <div className="hero-headline reveal">
             <h1 className="hero-h1-stacked">
               <span className="h1-line">Hello, my name is</span>
