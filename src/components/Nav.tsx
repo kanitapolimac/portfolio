@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { CALENDLY_URL, openCalendly } from "../lib/calendly";
 
 const sections = [
   { id: "work", num: "01", label: "Work" },
@@ -45,7 +46,7 @@ export default function Nav() {
               {s.label}
             </a>
           ))}
-          <a className="nav-cta" href="#contact">
+          <a className="nav-cta" href={CALENDLY_URL} onClick={openCalendly}>
             Book a call →
           </a>
         </div>

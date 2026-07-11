@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import CaseCard from "../components/CaseCard";
 import HeroParticles from "../components/HeroParticles";
 import { useReveal } from "../hooks/useReveal";
+import { CALENDLY_URL, openCalendly } from "../lib/calendly";
 
 export default function Home() {
   useReveal();
@@ -804,7 +805,8 @@ export default function Home() {
           <div className="contact-cta reveal">
             <a
               className="btn btn-primary"
-              href="mailto:kanita.polimac@gmail.com?subject=Free%20consultation"
+              href={CALENDLY_URL}
+              onClick={openCalendly}
             >
               Book a free consultation
               <svg
