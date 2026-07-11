@@ -715,7 +715,10 @@ section { padding-block: var(--section-pad); position: relative; }
   transition: opacity .3s ease, background .3s ease;
 }
 .contact-item a:hover .val::after { background: var(--accent); opacity: 1; }
-.contact-cta { margin-top: clamp(48px, 5vw, 72px); }
+.contact-cta {
+  margin-top: clamp(48px, 5vw, 72px);
+  margin-bottom: clamp(72px, 9vw, 128px);
+}
 @media (max-width: 720px) {
   .contact-grid { grid-template-columns: 1fr; }
 }
@@ -832,5 +835,44 @@ footer.home-foot {
 .home-hero .hero-grid {
   position: relative;
   z-index: 2;
+}
+.hero-scroll-cue {
+  position: absolute;
+  bottom: clamp(20px, 3vw, 36px);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  pointer-events: none;
+}
+.hero-scroll-cue .cue-line {
+  width: 1px;
+  height: 44px;
+  background: color-mix(in oklab, var(--ink-3) 40%, transparent);
+  overflow: hidden;
+  position: relative;
+}
+.hero-scroll-cue .cue-line::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--accent);
+  transform: translateY(-100%);
+  animation: cue-drop 2.2s cubic-bezier(.2,.7,.2,1) infinite;
+}
+@keyframes cue-drop {
+  0%       { transform: translateY(-100%); }
+  60%, 100% { transform: translateY(100%); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-scroll-cue .cue-line::after { animation: none; }
 }
 

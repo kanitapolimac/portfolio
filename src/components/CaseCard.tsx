@@ -34,7 +34,13 @@ export default function CaseCard({
   return (
     <Link className={`case ${variantClass} reveal`} to={to}>
       <div className="case-frame" style={frameStyle}>
-        <img src={img.src} alt={img.alt} style={img.style} />
+        <img
+          src={img.src}
+          alt={img.alt}
+          style={img.style}
+          loading="lazy"
+          decoding="async"
+        />
       </div>
       <div className="case-meta">
         <div className="case-num">{num}</div>

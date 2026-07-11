@@ -28,6 +28,10 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <div className="hero-scroll-cue" aria-hidden="true">
+          <span>Scroll</span>
+          <span className="cue-line" />
+        </div>
       </header>
 
       {/* INTRO */}
