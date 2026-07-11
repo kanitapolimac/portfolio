@@ -18,20 +18,20 @@ export default function Home() {
         <div className="ambient" />
         <HeroParticles hostRef={heroRef} />
         <div className="wrap hero-grid">
-          <div className="hero-headline reveal">
-            <h1 className="hero-h1-stacked">
-              <span className="h1-line">Hello, my name is</span>
-              <span className="h1-rule" aria-hidden="true" />
-              <span className="h1-line">
+          <div className="hero-center">
+            <div className="hero-headline reveal">
+              <h1>
+                Hello, my name is
+                <br />
                 Kanita Pol<em>i</em>mac.
-              </span>
-            </h1>
-          </div>
+              </h1>
+            </div>
 
-          <p className="hero-tagline reveal">
-            I design products that don't just look good, they solve hard
-            problems at scale.
-          </p>
+            <p className="hero-tagline reveal">
+              I design products that don't just look good, they solve hard
+              problems at scale.
+            </p>
+          </div>
 
           <div className="hero-stats reveal">
             <div className="stat">
