@@ -1,18 +1,23 @@
+import { useRef } from "react";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import CaseCard from "../components/CaseCard";
+import HeroPhoenix from "../components/HeroPhoenix";
+import HeroCursor from "../components/HeroCursor";
 import { useReveal } from "../hooks/useReveal";
 
 export default function Home() {
   useReveal();
+  const heroRef = useRef<HTMLElement>(null);
 
   return (
     <>
       <Nav />
 
       {/* HERO */}
-      <header className="home-hero" id="top">
+      <header className="home-hero" id="top" ref={heroRef}>
         <div className="ambient" />
+        <HeroPhoenix />
         <div className="wrap hero-grid">
           <div className="hero-eyebrow">
             <span className="available-pill">
@@ -25,10 +30,12 @@ export default function Home() {
           </div>
 
           <div className="hero-headline reveal">
-            <h1>
-              Hello, my name is
-              <br />
-              Kanita Pol<em>i</em>mac.
+            <h1 className="hero-h1-stacked">
+              <span className="h1-line">Hello, my name is</span>
+              <span className="h1-rule" aria-hidden="true" />
+              <span className="h1-line">
+                Kanita Pol<em>i</em>mac.
+              </span>
             </h1>
           </div>
 
@@ -62,6 +69,7 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <HeroCursor hostRef={heroRef} />
       </header>
 
       {/* SELECTED WORK */}
