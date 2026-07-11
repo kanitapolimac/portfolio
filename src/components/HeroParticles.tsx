@@ -189,11 +189,11 @@ varying vec3 vLightDir;
 varying vec3 vViewDir;
 
 const vec3 PALETTE[5] = vec3[5](
-	vec3(1.0, 0.93, 0.1),    // yellow
-	vec3(0.37, 0.77, 1.0),   // baby blue
-	vec3(1.0, 0.24, 0.73),   // pink
-	vec3(1.0, 0.19, 0.19),   // red
-	vec3(0.64, 0.37, 1.0)    // violet
+	vec3(0.973, 0.863, 0.357),  // accent gold #F8DC5B
+	vec3(1.0, 0.95, 0.62),      // light gold
+	vec3(0.85, 0.62, 0.15),     // deep amber
+	vec3(0.98, 0.75, 0.25),     // warm gold
+	vec3(0.96, 0.9, 0.75)       // pale champagne
 );
 
 void main() {
@@ -506,7 +506,7 @@ export default function HeroParticles({ hostRef }: Props) {
           particleDataTexture: { value: particleDataTexture },
           uPointSize: { value: getPointSize(aspect) },
           uLightDirection: { value: lightDirection },
-          shadowColor: { value: new THREE.Color(0x2f4c52) },
+          shadowColor: { value: new THREE.Color(0x4a3608) },
           shadowBlurRadius: { value: 2.0 },
         },
       ]),
