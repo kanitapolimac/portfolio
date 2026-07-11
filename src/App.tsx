@@ -5,6 +5,7 @@ import CaseCarea from "./pages/case-carea";
 import CaseStoreIntelligence from "./pages/case-store-intelligence";
 import CaseAirdomo from "./pages/case-airdomo";
 import CaseSystemAkvile from "./pages/case-system-akvile";
+import BackToTop from "./components/BackToTop";
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
         <Route path="/case-airdomo" element={<CaseAirdomo />} />
         <Route path="/case-system-akvile" element={<CaseSystemAkvile />} />
       </Routes>
+      <BackToTop />
     </BrowserRouter>
   );
 }

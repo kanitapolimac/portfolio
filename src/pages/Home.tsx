@@ -66,7 +66,7 @@ export default function Home() {
       </section>
 
       {/* SELECTED WORK */}
-      <section id="work" className="rule-top">
+      <section id="work">
         <div className="wrap">
           <div className="section-head">
             <div className="eyebrow">§ 01 · Selected Work</div>
