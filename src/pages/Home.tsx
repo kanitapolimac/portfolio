@@ -231,7 +231,7 @@ export default function Home() {
                 placeholder="Drop portrait of Kanita"
                 shape="rect"
                 radius="2"
-                src="/cases/assets/kanita-portrait.png"
+                src="/cases/assets/kanita-portrait-2.png"
               />
             </div>
             <div className="about-prose reveal">
