@@ -209,6 +209,9 @@ section { padding-block: var(--section-pad); position: relative; }
 }
 .btn:hover .arr { transform: translateX(3px); }
 
+.hero-sub {
+  padding-block: clamp(48px, 7vw, 96px);
+}
 .hero-stats {
   margin-top: clamp(36px, 5vw, 64px);
   display: grid;

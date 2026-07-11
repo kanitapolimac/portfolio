@@ -26,12 +26,17 @@ export default function Home() {
                 Kanita Pol<em>i</em>mac.
               </h1>
             </div>
-
-            <p className="hero-tagline reveal">
-              I design products that don't just look good, they solve hard
-              problems at scale.
-            </p>
           </div>
+        </div>
+      </header>
+
+      {/* INTRO */}
+      <section className="hero-sub">
+        <div className="wrap">
+          <p className="hero-tagline reveal">
+            I design products that don't just look good, they solve hard
+            problems at scale.
+          </p>
 
           <div className="hero-stats reveal">
             <div className="stat">
@@ -58,7 +63,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </header>
+      </section>
 
       {/* SELECTED WORK */}
       <section id="work" className="rule-top">
